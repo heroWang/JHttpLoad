@@ -17,12 +17,11 @@ JHttpLoad almost has the same features with http_load
 
 **load test url.txt**:
 ~~~
-[http://123.57.76.162/blog/](http://123.57.76.162/blog/)
+http://123.57.76.162/blog/
 ~~~
 
 
 **JHttpLoad**:
-
 ~~~
 18 fetches, 4 max parallel, 91998 bytes, in 10.0000 seconds
 5111.00  mean bytes/connection
@@ -33,7 +32,6 @@ msecs/first-response: 332.611 mean, 1474 max, 240 min
 ~~~
 
 **http_load**:
-
 ~~~
 18 fetches, 2 max parallel, 86724 bytes, in 10.0006 seconds
 4818 mean bytes/connection
