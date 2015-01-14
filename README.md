@@ -3,7 +3,7 @@
 a simple Java version of [http_load][],implemented with Java NIO.
 [http_load]: https://github.com/timbunce/http_load](https://github.com/timbunce/http_load
 
-http_load is a c http benchmark program.
+http_load is a c implemented http benchmark program.
 
 >http_load runs multiple http fetches in parallel, to test the
 >throughput of a web server.  However unlike most such test clients,
@@ -11,9 +11,10 @@ http_load is a c http benchmark program.
 >machine.  It can be configured to do https fetches as well.
 >JHttpLoad almost has the same  features with http_load.
 
-JHttpLoad almost has the same features with http_load
+JHttpLoad almost has the same features with http_load.
 
 ## Usage
+
 ~~~
 usage: jhttpload -parallel N | -rate N 
  -fetches N | -seconds N 
@@ -41,7 +42,6 @@ usage: Main
 http://123.57.76.162/blog/
 ~~~
 
-
 **JHttpLoad**:
 ~~~
 18 fetches, 4 max parallel, 91998 bytes, in 10.0000 seconds
@@ -61,7 +61,7 @@ msecs/connect: 114.507 mean, 129.007 max, 102.006 min
 msecs/first-response: 233.013 mean, 260.014 max, 215.012 min
 HTTP response codes:
   code 200 -- 18
-  ~~~
+~~~
 
 
 
