@@ -13,6 +13,27 @@ http_load is a c http benchmark program.
 
 JHttpLoad almost has the same features with http_load
 
+## Usage
+~~~
+usage: jhttpload -parallel N | -rate N 
+ -fetches N | -seconds N 
+ [-timeout seconds] url_file
+usage: Main
+ -f,--fetches <arg>    fetch times for every url.either -seconds or
+                       -fetches is required.
+ -h,--help             show usage.
+ -p,--parallel <arg>   parallel mode,the program will test every url with
+                       specific number of connections.
+                       either -rate or -parallel is required.
+ -r,--rate <arg>       rate mode,the program will test every url at
+                       specific rate,like 2 fetches per second.
+                       either -rate or -parallel is required.
+ -s,--seconds <arg>    test last time(seconds).either -seconds or -fetches
+                       is required.
+ -timeout <arg>        request timout(seconds).not required,default 10
+                       seconds.
+~~~
+
 ## Results comare
 
 **load test url.txt**:
