@@ -161,4 +161,8 @@ public class Statistic {
 		return totalTimouts;
 	}
 
+	public int getCurrConnectionNUm() {
+		return this.currConnectionNum;
+	}
+
 }

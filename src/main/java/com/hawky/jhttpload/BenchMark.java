@@ -173,7 +173,6 @@ public class BenchMark {
 						keyItr.remove();
 					}
 				}
-
 				timerTaskMgr.runTimer(now);
 			} catch (IOException e) {
 				e.printStackTrace();
@@ -311,6 +310,9 @@ public class BenchMark {
 		try {
 			int read = channel.read(conn.buffer);
 			// System.out.println("read byte length:" + read);
+			if(read == 0 && conn.buffer.position() == conn.buffer.limit()){
+				throw new RuntimeException("read buffer overflow.consider to increase the buffer size.");
+			}
 			if (read < 0) {
 				conn.endAt = now;
 				closeConnection(conn);

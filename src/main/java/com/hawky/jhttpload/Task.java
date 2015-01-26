@@ -22,7 +22,7 @@ public class Task implements Comparable<Task> {
 	}
 
 	public int compareTo(Task t) {
-		return new Long(this.execTimeMillis).compareTo(((Task) t).execTimeMillis);
+		return this.hashCode() - t.hashCode();
 	}
 
 	public static class TaskComparator implements Comparator<Task> {
