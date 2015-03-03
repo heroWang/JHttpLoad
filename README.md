@@ -11,7 +11,7 @@ http_load is a c implemented http benchmark program.
 >machine.  It can be configured to do https fetches as well.
 >JHttpLoad almost has the same  features with http_load.
 
-JHttpLoad almost has the same features with http_load.
+JHttpLoad almost has the same features as http_load.
 
 ## Usage
 
